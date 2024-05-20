@@ -248,3 +248,20 @@ by Miguel Avila
     padding: 0px !important;
     border-width: 0 !important;
   }
+
+  /* MOVE URL TEXT INPUT */
+  #urlbar-input {
+  margin-left: 10px !important;
+  }     
+
+
+  /* REMOVE 'Search or enter address' TEXT */
+  #urlbar-input::placeholder{ 
+      color: transparent 
+  }
+
+  /* Remove Magnifying Glass Icon */
+  #urlbar:not(.searchButton) > #urlbar-input-container >     #identity-box[pageproxystate="invalid"] {
+    margin-inline-start: -35px;
+    opacity: 0;
+  }
