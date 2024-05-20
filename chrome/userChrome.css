@@ -346,3 +346,19 @@ spacer[part="overflow-end-indicator"]{
 .menupopup-arrowscrollbox{
   --tab-shadow-max-size: 0;
 }
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+#tabbrowser-tabs { visibility: collapse !important; }
+
+/* tst */
+/* Only works in Firefox if layout.css.has-selector.enabled is set to true in about:config . */
+/* html#main-window body:has(#sidebar-box[sidebarcommand=treestyletab_piro_sakura_ne_jp-sidebar-action][checked=true]:not([hidden=true])) #TabsToolbar {
+  visibility: collapse !important;
+} */
