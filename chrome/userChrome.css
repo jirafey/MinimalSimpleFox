@@ -80,7 +80,7 @@ by Miguel Avila
   
   /* Tabs elements  */
   .tab-close-button {
-    display: none;
+    display: 0.01px;
   }
   
 
@@ -265,3 +265,18 @@ by Miguel Avila
     margin-inline-start: -35px;
     opacity: 0;
   }
+/* MOVE URL TEXT INPUT */
+#urlbar-input {
+  margin-left: 20px !important;
+}     
+
+/* REMOVE IDENTITY BOX SPACER */
+#urlbar[pageproxystate="valid"] > #identity-box.extensionPage     {
+border-image-slice: 0 !important;
+}
+
+#identity-box {
+  border-image-slice: 0 !important;
+}
+
+
